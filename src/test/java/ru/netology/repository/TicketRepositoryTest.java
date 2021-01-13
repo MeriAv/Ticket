@@ -8,11 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TicketRepositoryTest {
     private TicketRepository repository = new TicketRepository();
-    private Ticket first = new Ticket(1, 1000, "SVO", "LAX", 780);
-    private Ticket second = new Ticket(2, 500, "SVO", "LAX", 720);
-    private Ticket third = new Ticket(3, 300, "SVO", "LIS", 180);
-    private Ticket forth = new Ticket(4, 500, "IST", "LAX", 780);
-    private Ticket fifth = new Ticket(5, 100, "SVO", "LIS", 300);
+    private Ticket first = new Ticket(1, 1000, "MSK", "SPB", 750);
+    private Ticket second = new Ticket(2, 500, "MSK", "SPB", 750);
+    private Ticket third = new Ticket(3, 300, "SMR", "KRD", 300);
+    private Ticket forth = new Ticket(4, 500, "KRD", "SPB", 780);
+    private Ticket fifth = new Ticket(5, 100, "SMR", "KRD", 300);
 
     @BeforeEach
     public void setUp() {
