@@ -14,9 +14,8 @@ class TicketManagerTest {
         TicketManager manager = new TicketManager();
         Ticket first = new Ticket(1, 1000, "MSK", "SPB", 750);
         Ticket second = new Ticket(2, 500, "MSK", "SPB", 750);
-        Ticket third = new Ticket(3, 300, "SMR", "KRD", 300);
-        Ticket forth = new Ticket(4, 500, "KRD", "SPB", 780);
-        Ticket fifth = new Ticket(5, 100, "SMR", "KRD", 300);
+        manager.add(first);
+        manager.add(second);
         String from = "MSK";
         String to = "SPB";
         Ticket[] expected = new Ticket[]{second, first};
@@ -28,6 +27,7 @@ class TicketManagerTest {
     void shouldSearchAndSortByAirports1Ticket() {
         TicketManager manager = new TicketManager();
         Ticket first = new Ticket(1, 1000, "MSK", "SPB", 750);
+        manager.add(first);
         String from = "MSK";
         String to = "SPB";
         Ticket[] expected = new Ticket[]{first};
